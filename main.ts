@@ -47,7 +47,19 @@ input.onButtonPressed(Button.A, function () {
   basic.showString("Yellow")
   basic.pause(1000)
 
+  // turn on cyan 
+  pins.digitalWritePin(DigitalPin.P13, 1)
+  pins.digitalWritePin(DigitalPin.P14, 0) 
+  pins.digitalWritePin(DigitalPin.P15, 1)
+  basic.showString("cyan")
+  basic.pause(1000)
 
+  // turn on white
+  pins.digitalWritePin(DigitalPin.P13, 1)
+  pins.digitalWritePin(DigitalPin.P14, 1)
+  pins.digitalWritePin(DigitalPin.P15, 1)
+  basic.showString("White")
+  basic.pause(1000)
 
 
 
